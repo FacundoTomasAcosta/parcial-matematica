@@ -1,0 +1,84 @@
+HACER UN PROGRAMA QUE PIDA DOS CONJUNTOS Y QUE PUEDA REALIZAR LAS OPERACIONES DE UNIÓN, INTERSECCIÓN Y DIFERENCIA
+
+Programa operacion_de_conjuntos
+
+#Declaración de variables
+primer_conjunto
+segundo_conjunto
+operacion
+resultado_union
+resultado_interseccion
+resultado_diferencia
+
+
+#Inicializo las variables
+
+primer_conjunto = [1, 3, 4, 6]
+segundo_conjunto = [1, 3, 4]
+
+
+COMENZAR
+
+#Le solicito al usuario que operación quiere realizar.
+
+operacion = input("Ingrese la operación de conjuntos que quiera realizar, puede ser Y (UNIÓN), O (INTERSECCIÓN) - (DIFERENCIA): ")
+
+
+Comenzar Si
+
+Si (operacion = "Y")
+	Entonces #Realizo la operación de unión
+		Comenzar Entonces
+			resultado_union = primer_conjunto ∪ segundo_conjunto
+			imprimir("El resultado de la unión de los dos conjuntos es: ", resultado_union)
+		Fin Entonces
+Fin Si
+
+Comenzar Si
+
+Si (operacion = "O")
+	Entonces #Realizo la operación de intersección
+		Comenzar Entonces
+			resultado_interseccion = primer_conjunto ∩ segundo_conjunto
+			imprimir("El resultado de la interseccion de los dos conjuntos es: ", resultado_interseccion)
+		Fin Entonces
+Fin Si
+
+Comenzar Si
+
+Si (operacion = "-")
+	Entonces #Realizo la operación de diferencia
+		Comenzar Entonces
+			resultado_diferencia = primer_conjunto - segundo_conjunto
+			imprimir("El resultado de la diferencia de los dos conjuntos es: ", resultado_diferencia)
+		Fin Entonces
+Sino
+	Comenzar Sino #Le pido al usuario que ingrese nuevamente una operación correcta
+		imprimir("Por favor ingrese nuevamente la operación que quiera realizar, puede ser Y (UNIÓN), O (INTERSECCIÓN) - (DIFERENCIA)")
+	Fin Sino
+
+Fin Si
+
+FIN
+
+		
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
